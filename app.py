@@ -14,7 +14,7 @@ faceMesh = mpFaceMesh.FaceMesh()
 drawing_spec = mpDraw.DrawingSpec(thickness=1, circle_radius=1)
 
 nose_landmarks = [49, 279, 197, 2, 5]
-app = Flask('hello')
+app = Flask(__name__)
 camera = cv2.VideoCapture(0)
 def gen_frames():  
     while True:
